@@ -1,38 +1,188 @@
-.App {
+:root {
+  --grey-20: #333;
+  --white-: #fff;
+  --red-: #e30413;
+  --green-: #3ea535;
+  --yellow-: #ffee00;
+  --blue-: #039fe3;
+  --pink-: #f8c5af;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  background-color: var(--grey-20);
+  padding: 16px;
   text-align: center;
+  color: var(--white-);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-weight: normal;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.jobs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 1020px;
+  flex-wrap: wrap;
+  margin: 60px auto;
+  box-sizing: border-box;
+}
+
+.job {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border: solid 3px black;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  padding: 16px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.red {
+  border-color: var(--red-);
+  box-shadow: 0 14px 28px rgba(227, 4, 19, 0.18);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.green {
+  border-color: var(--green-);
+  box-shadow: 0 14px 28px rgba(62, 165, 53, 0.18);
+}
+
+.yellow {
+  border-color: var(--yellow-);
+  box-shadow: 0 14px 28px rgba(255, 238, 0, 0.3);
+}
+
+.blue {
+  border-color: var(--blue-);
+  box-shadow: 0 14px 28px rgba(3, 159, 227, 0.18);
+}
+
+.pink {
+  border-color: var(--pink-);
+  box-shadow: 0 14px 28px rgba(248, 197, 175, 0.4);
+}
+
+@media (min-width: 300px) {
+  h1 {
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 22px;
+  }
+
+  .jobs {
+    margin: 60px auto;
+  }
+
+  .job {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 20px 60px 20px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  .jobs {
+    margin: 60px auto;
+  }
+
+  .job {
+    width: calc(50% - 60px);
+    box-sizing: border-box;
+    margin: 0 40px 60px 0;
+    height: 300px;
+  }
+
+  .job:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .job:last-child {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+
+  .jobs {
+    margin: 60px auto;
+  }
+
+  .job {
+    width: calc(33% - 60px);
+    box-sizing: border-box;
+    margin: 0 40px 60px 0;
+  }
+
+  .job:nth-child(2n) {
+    margin-right: 40px;
+  }
+
+  .job:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .jobs {
+    margin: 60px auto;
+  }
+
+  .job {
+    width: calc(33%-60px);
+    height: 300px;
+    box-sizing: border-box;
+    margin: 0 60px 60px 0;
+  }
+
+  .job:nth-child(2n) {
+    margin-right: 60px;
+  }
+
+  .job:nth-child(3n) {
+    margin-right: 0;
   }
 }
