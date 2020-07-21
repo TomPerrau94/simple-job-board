@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import Jobs from "./Jobs";
-import Header from "./Header";
-import Footer from "./Footer";
+import Jobs from "./components/Jobs";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
