@@ -49,7 +49,7 @@ a:hover {
   align-content: center;
   max-width: 1020px;
   flex-wrap: wrap;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
   box-sizing: border-box;
 }
 
@@ -107,10 +107,6 @@ a:hover {
     font-size: 22px;
   }
 
-  .jobs {
-    margin: 60px auto;
-  }
-
   .job {
     width: 100%;
     box-sizing: border-box;
@@ -125,10 +121,6 @@ a:hover {
   }
   h2 {
     font-size: 22px;
-  }
-
-  .jobs {
-    margin: 60px auto;
   }
 
   .job {
@@ -155,10 +147,6 @@ a:hover {
     font-size: 26px;
   }
 
-  .jobs {
-    margin: 60px auto;
-  }
-
   .job {
     width: calc(33% - 60px);
     box-sizing: border-box;
@@ -181,10 +169,6 @@ a:hover {
 
   h2 {
     font-size: 30px;
-  }
-
-  .jobs {
-    margin: 60px auto;
   }
 
   .job {
