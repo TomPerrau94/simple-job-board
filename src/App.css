@@ -1,5 +1,6 @@
 :root {
   --grey-20: #333;
+  --grey-80: #c4c4c4;
   --white-: #fff;
   --red-: #e30413;
   --green-: #3ea535;
@@ -31,6 +32,15 @@ h2 {
 p {
   font-size: 14px;
   margin: 0;
+}
+
+a {
+  font-weight: 600;
+  color: black;
+}
+
+a:hover {
+  color: var(--grey-20);
 }
 
 .jobs {
@@ -81,6 +91,12 @@ p {
 .pink {
   border-color: var(--pink-);
   box-shadow: 0 14px 28px rgba(248, 197, 175, 0.4);
+}
+
+.footer {
+  background-color: var(--grey-80);
+  padding: 30px;
+  text-align: center;
 }
 
 @media (min-width: 300px) {
