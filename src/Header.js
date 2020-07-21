@@ -4,7 +4,7 @@ import Title from "./Title";
 const Header = ({ className }) => {
   return (
     <div className={className}>
-      <Title />
+      <Title name="Simple Job Board" />
     </div>
   );
 };
